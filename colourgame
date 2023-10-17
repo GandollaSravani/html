@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colourchange</title>
+</head>
+<body>
+    <input type="button" onmouseover="ChangeColor()" value="Button" id="myButton" />
+    <input type="button" onmouseover="ChangeColor2()" value="Button" id="myButton2" />
+    <input type="button" onmouseover="ChangeColor3()" value="Button" id="myButton3" />
+    <input type="button" onmouseover="ChangeColor4()" value="Button" id="myButton4" />
+    <input type="button" onmouseover="ChangeColor5()" value="Button" id="myButton5" />
+    <input type="button" onmouseover="ChangeColor6()" value="Button" id="myButton6" />
+    <input type="button" onmouseover="ChangeColor7()" value="Button" id="myButton7" />
+     <script>
+        function ChangeColor(){
+            var randomColor = Math.floor(Math.random()*16777215).toString(16);
+            var button = document.getElementById("myButton");
+  button.style.backgroundColor = "#"+randomColor;
+        }
+        function ChangeColor2() {  
+  var randomColor = Math.floor(Math.random()*16777215).toString(16);
+            var button = document.getElementById("myButton2");
+  button.style.backgroundColor = "#"+randomColor;
+        }
+        function ChangeColor3() {  
+  var randomColor = Math.floor(Math.random()*16777215).toString(16);
+            var button = document.getElementById("myButton3");
+  button.style.backgroundColor = "#"+randomColor;
+        }
+        function ChangeColor4() {  
+  var randomColor = Math.floor(Math.random()*16777215).toString(16);
+            var button = document.getElementById("myButton4");
+  button.style.backgroundColor = "#"+randomColor;
+        }
+        function ChangeColor5(){  
+  var randomColor = Math.floor(Math.random()*16777215).toString(16);
+            var button = document.getElementById("myButton5");
+  button.style.backgroundColor = "#"+randomColor;
+        }
+        function ChangeColor6() {  
+  var randomColor = Math.floor(Math.random()*16777215).toString(16);
+            var button = document.getElementById("myButton6");
+  button.style.backgroundColor = "#"+randomColor;
+        }
+        function ChangeColor7() {  
+  var randomColor = Math.floor(Math.random()*16777215).toString(16);
+            var button = document.getElementById("myButton7");
+  button.style.backgroundColor = "#"+randomColor;
+        }
+        
+    </script>
+</html>
+</body>
