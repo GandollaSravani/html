@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <h1 align="center" style="color:#00d0ff;">Drop down Box Project</h1>
+    </head>  
+    <body>
+        <!-- <button>list of Countries and States</button> -->
+        <select id="Select">
+
+            <option class="opt">America</option>
+            <option class="opt">Africa</option>
+            <option class="opt">Bihar</option>
+            <option class="opt">Bengurlu</option>
+            <option class="opt">Canada</option>
+            <option class="opt">India</option>
+            <option class="opt">Island</option>
+            <option class="opt">Iran</option>
+            <option class="opt">Japan</option>
+            <option class="opt">Jharkand</option>
+            <option class="opt">Russia</option>
+            <option class="opt">Europe</option>
+            <option class="opt">England</option>
+            <option class="opt">USA</option>
+    </select>
+<input type="text" id="search"/>
+        <button onclick="myFunction()">Click</button>
+        <script>
+          function myFunction(){
+
+              console.log("Function is running");
+             var x=document.getElementById("search").value;
+             var element =[];
+             element=document.getElementsByClassName('opt');
+             console.log(element);
+            for (var i=0; i<=element.length;i++){
+
+              var option=element[i].innerHTML;
+              // element[i]==option[0];
+                  if (option.substring(0,x.length)==x){
+                   console.log("It is a Working");
+              }
+              else{
+                  element[i].innerHTML="";
+              }
+              }
+          }
+      </script>
+    </body> 
+</html>
